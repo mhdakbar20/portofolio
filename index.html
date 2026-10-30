@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- GANTI: Judul halaman sesuai kebutuhan personal branding Anda -->
+  <title>Portofolio Muhammad Akbar</title>
+  
+  <!-- GANTI: Deskripsi ringkas untuk SEO dan media sosial -->
+  <meta name="description" content="Portofolio resmi Muhammad Akbar - Junior Web Developer dan Administrasi. Menggabungkan logika pemrograman, estetika visual, dan efisiensi manajemen data.">
+  <meta name="author" content="Muhammad Akbar">
+  <meta name="theme-color" content="#845233" id="meta-theme-color">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://muhammadakbar.dev/">
+  <meta property="og:title" content="Muhammad Akbar | Junior Web Developer & Administrasi">
+  <meta property="og:description" content="Website portofolio profesional: proyek web modern, keahlian teknis, desain grafis, dan rekam jejak pengalaman.">
+  <meta property="og:image" content="assets/img/pas_foto.jpeg">
+
+  <!-- Google Fonts: Inter (Teks Utama) + Plus Jakarta Sans (Heading) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet Utama (Pure CSS3) -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Opening intro saat halaman pertama kali diakses -->
+  <div class="site-intro" id="site-intro" role="status" aria-label="Membuka portofolio Muhammad Akbar">
+    <div class="site-intro__beam" aria-hidden="true"></div>
+    <div class="site-intro__content">
+      <div class="site-intro__monogram" aria-hidden="true">MA</div>
+      <span class="site-intro__eyebrow">PORTFOLIO / 2026</span>
+      <h2 class="site-intro__name">Muhammad Akbar</h2>
+      <p class="site-intro__role">Web Development <span aria-hidden="true">&bull;</span> Administrasi <span aria-hidden="true">&bull;</span> Multimedia</p>
+      <div class="site-intro__progress" aria-hidden="true"><span></span></div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       1. NAVBAR (Sticky Navigation Bar)
+       ========================================================= -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <!-- GANTI: Logo atau Inisial Nama Anda -->
+      <a href="#hero" class="logo" aria-label="Beranda Muhammad Akbar">
+        <span class="logo__badge">MA</span>
+        <span class="logo__text">Muhammad<span class="logo__dot">Akbar</span></span>
+      </a>
+
+      <!-- Menu Navigasi Utama -->
+      <nav class="nav" id="nav-menu" aria-label="Navigasi Utama">
+        <div class="nav__mobile-header">
+          <span class="nav__mobile-tag">Menu Navigasi</span>
+          <span class="nav__mobile-hint">Tekan ESC untuk tutup</span>
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item" style="--item-index: 1;">
+            <a href="#tentang" class="nav__link">
+              <span class="nav__link-num" aria-hidden="true">01</span>
+              <span class="nav__link-text">Tentang</span>
+              <span class="nav__link-arrow" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="nav__item" style="--item-index: 2;">
+            <a href="#keahlian" class="nav__link">
+              <span class="nav__link-num" aria-hidden="true">02</span>
+              <span class="nav__link-text">Keahlian</span>
+              <span class="nav__link-arrow" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="nav__item" style="--item-index: 3;">
+            <a href="#proyek" class="nav__link">
+              <span class="nav__link-num" aria-hidden="true">03</span>
+              <span class="nav__link-text">Proyek</span>
+              <span class="nav__link-arrow" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="nav__item" style="--item-index: 4;">
+            <a href="#pengalaman" class="nav__link">
+              <span class="nav__link-num" aria-hidden="true">04</span>
+              <span class="nav__link-text">Pengalaman</span>
+              <span class="nav__link-arrow" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="nav__item" style="--item-index: 5;">
+            <a href="#kontak" class="nav__link">
+              <span class="nav__link-num" aria-hidden="true">05</span>
+              <span class="nav__link-text">Kontak</span>
+              <span class="nav__link-arrow" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav__mobile-footer">
+          <span class="nav__mobile-status-dot" aria-hidden="true"></span>
+          <span class="nav__mobile-status-text">Siap Kerja &amp; Kolaborasi</span>
+        </div>
+      </nav>
+
+      <!-- Aksi Navbar: Toggle Tema & Tombol Mobile -->
+      <div class="header__actions">
+        <div class="header__shortcuts" aria-label="Kontak cepat">
+          <a href="https://wa.me/6281278948316?text=Halo%20Akbar,%20saya%20melihat%20portofolio%20Anda" class="header__shortcut header__shortcut--whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Hubungi melalui WhatsApp" title="Hubungi melalui WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path fill="currentColor" d="M12 2a9.9 9.9 0 0 0-8.52 14.95L2 22l5.2-1.37A10 10 0 1 0 12 2Z"/>
+              <path fill="var(--color-surface)" d="M16.68 13.92c-.25-.13-1.49-.73-1.72-.81-.23-.08-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.13-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.14-.25-.01-.39.11-.52.11-.11.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.37-.78-1.88-.21-.49-.42-.42-.57-.43h-.49c-.17 0-.44.06-.67.32-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.13.17 1.76 2.69 4.27 3.77.6.26 1.07.41 1.44.53.61.19 1.17.16 1.61.1.49-.07 1.49-.61 1.7-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.16-.48-.29Z"/>
+            </svg>
+          </a>
+          <a href="mailto:mhd.akbarmura@gmail.com" class="header__shortcut header__shortcut--email" aria-label="Kirim email ke Muhammad Akbar" title="Kirim email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="18" height="14" rx="2"/>
+              <path d="m3 7 9 6 9-6"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Tombol Toggle Dark / Light Mode -->
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Ganti tema gelap atau terang" title="Ganti Mode Tampilan">
+          <!-- Icon Sun (Mode Terang) -->
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+          </svg>
+          <!-- Icon Moon (Mode Gelap) -->
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+        </button>
+
+        <!-- Tombol Hamburger Mobile Menu -->
+        <button type="button" class="hamburger" id="nav-toggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Overlay untuk Mobile Menu saat terbuka -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+    <!-- =========================================================
+         2. HERO SECTION
+         ========================================================= -->
+    <section class="hero section" id="hero" tabindex="-1">
+      <div class="container hero__container">
+        
+        <!-- Kolom Teks Hero -->
+        <div class="hero__content reveal-on-scroll">
+          <div class="status-badge">
+            <span class="status-badge__dot" aria-hidden="true"></span>
+            <!-- GANTI: Status ketersediaan Anda saat ini -->
+            <span>Siap Kerja & Terbuka untuk Peluang Baru</span>
+          </div>
+
+          <p class="hero__greeting">Halo, salam kenal! Saya</p>
+          
+          <!-- GANTI: Nama lengkap Anda (Satu-satunya H1 pada halaman) -->
+          <h1 class="hero__name">Muhammad Akbar</h1>
+          
+          <!-- GANTI: Peran utama dan spesialisasi Anda -->
+          <div class="hero__role-wrapper">
+            <span class="hero__role">Fresh Graduate Ilmu Komputer</span>
+          </div>
+
+          <!-- GANTI: Tagline personal Anda dalam satu kalimat tajam -->
+          <p class="hero__tagline">
+            Teliti, komunikatif, dan memiliki semangat untuk terus belajar dan berkembang. Siap berkontribusi di bidang teknologi informasi, administrasi, dan multimedia.
+          </p>
+
+          <!-- Dua Tombol Call-to-Action Utama -->
+          <div class="hero__cta-group">
+            <a href="#proyek" class="btn btn--primary">
+              <span>Lihat Proyek Saya</span>
+              <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <!-- GANTI: Ganti tautan href="#" dengan file CV PDF asli Anda, misalnya: assets/doc/CV_Muhammad_Akbar.pdf -->
+            <a href="assets/doc/ijazah.pdf" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">
+              <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              <span>Unduh CV</span>
+            </a>
+          </div>
+
+          <!-- Quick Trust Badges -->
+          <div class="hero__mini-tags">
+            <span class="hero__mini-tag">
+              <span class="hero__mini-tag-icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </span>
+              <span>D3 Manajemen Informatika</span>
+            </span>
+
+            <span class="hero__mini-tag">
+              <span class="hero__mini-tag-icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 21h18"/>
+                  <path d="M5 21V7l7-4 7 4v14"/>
+                  <path d="M9 10h1M14 10h1M9 14h1M14 14h1M9 18h1M14 18h1"/>
+                </svg>
+              </span>
+              <span>Universitas Sriwijaya</span>
+            </span>
+
+            <span class="hero__mini-tag hero__mini-tag--highlight">
+              <span class="hero__mini-tag-icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="6"/>
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+                </svg>
+              </span>
+              <span>IPK 3.98</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Kolom Visual Foto Profil / Ilustrasi Modern -->
+        <div class="hero__visual reveal-on-scroll">
+          <div class="hero__card">
+            <div class="hero__card-glow" aria-hidden="true"></div>
+            <div class="hero__img-frame">
+              <!-- Foto profil profesional -->
+              <img src="assets/img/pas_foto.jpeg" alt="Foto Muhammad Akbar" class="hero__img" width="380" height="380">
+            </div>
+
+            <!-- Floating Badge Card 1 -->
+            <!-- <div class="floating-badge floating-badge--top">
+              <span class="floating-badge__icon" aria-hidden="true">💻</span>
+              <div>
+                <strong class="floating-badge__title">Frontend Logic</strong>
+                <span class="floating-badge__desc">HTML5 &bull; CSS3 &bull; JS</span>
+              </div>
+            </div> -->
+
+            <!-- Floating Badge Card 2 -->
+            <!-- <div class="floating-badge floating-badge--bottom">
+              <span class="floating-badge__icon" aria-hidden="true">📊</span>
+              <div>
+                <strong class="floating-badge__title">Data &amp; Admin</strong>
+                <span class="floating-badge__desc">Teliti &amp; Terstruktur</span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         3. TENTANG SAYA (About Section - Modern Bento Style)
+         ========================================================= -->
+    <section class="about section" id="tentang">
+      <div class="container">
+        
+        <!-- Header Judul Bagian -->
+        <div class="section-header reveal-on-scroll">
+          <span class="section-header__tag">Tentang Saya</span>
+          <h2 class="section-header__title">Menghubungkan Solusi Teknis dengan Kebutuhan Pengguna</h2>
+          <div class="section-header__line" aria-hidden="true"></div>
+        </div>
+
+        <div class="about__layout">
+          
+          <!-- Kolom Narasi & Kartu Profil Utama -->
+          <div class="about__main-card reveal-on-scroll">
+            <div class="about__card-decor" aria-hidden="true"></div>
+            
+            <!-- Lead Quote Box -->
+            <div class="about__quote-box">
+              <span class="about__quote-badge" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+              </span>
+              <!-- GANTI: Narasi lead profil Anda -->
+              <p class="about__lead">
+                Lulusan <strong>D3 Manajemen Informatika</strong> (Universitas Sriwijaya) dengan antusiasme mendalam pada pengembangan web modern, estetika antarmuka visual, dan tata kelola administrasi digital yang terstruktur.
+              </p>
+            </div>
+
+            <!-- Teks Narasi Tambahan -->
+            <div class="about__paragraphs">
+              <p class="about__text">
+                Saya terbiasa memadukan logika terstruktur dari latar belakang informatika dengan kepekaan desain grafis dan multimedia. Bagi saya, website yang unggul tidak sekadar berjalan tanpa eror di balik layar, tetapi juga harus nyaman dipandang, ringan dibuka, dan memudahkan pengunjung mencapai tujuan mereka dalam hitungan detik.
+              </p>
+              <p class="about__text">
+                Di samping rekayasa antarmuka web, saya memiliki pengalaman dalam operasional administrasi perkantoran, pengolahan spreadsheet data berakurasi tinggi, penyusunan dokumentasi sistem, serta pembuatan aset visual promosi digital untuk mendukung pertumbuhan bisnis.
+              </p>
+            </div>
+
+            <!-- 3 Core Work Pillars -->
+            <div class="about__pillars">
+              <div class="about__pillar">
+                <span class="about__pillar-dot" aria-hidden="true"></span>
+                <span>Clean Code &amp; Responsif</span>
+              </div>
+              <div class="about__pillar">
+                <span class="about__pillar-dot" aria-hidden="true"></span>
+                <span>Estetika UI/UX Modern</span>
+              </div>
+              <div class="about__pillar">
+                <span class="about__pillar-dot" aria-hidden="true"></span>
+                <span>Akurasi Data &amp; Administrasi</span>
+              </div>
+            </div>
+
+            <!-- Kartu Spesifikasi Cepat (Quick Specs Grid) -->
+            <div class="about__specs-grid">
+              
+              <div class="about__spec-card">
+                <div class="about__spec-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                  </svg>
+                </div>
+                <div class="about__spec-content">
+                  <span class="about__spec-label">Pendidikan</span>
+                  <!-- GANTI: Pendidikan -->
+                  <strong class="about__spec-value">D3 Manajemen Informatika</strong>
+                  <span class="about__spec-sub">Universitas Sriwijaya (IPK 3.98)</span>
+                </div>
+              </div>
+
+              <div class="about__spec-card">
+                <div class="about__spec-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="about__spec-content">
+                  <span class="about__spec-label">Lokasi Domisili</span>
+                  <!-- GANTI: Domisili -->
+                  <strong class="about__spec-value">Sumatera Selatan,Indonesia</strong>
+                  <span class="about__spec-sub">Siap Kerja WFO &amp; Remote</span>
+                </div>
+              </div>
+
+              <div class="about__spec-card">
+                <div class="about__spec-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"/>
+                    <polyline points="8 6 2 12 8 18"/>
+                  </svg>
+                </div>
+                <div class="about__spec-content">
+                  <span class="about__spec-label">Fokus Utama</span>
+                  <strong class="about__spec-value">Frontend &amp; Administrasi</strong>
+                  <span class="about__spec-sub">Web Apps &amp; Tata Kelola Data</span>
+                </div>
+              </div>
+
+              <div class="about__spec-card">
+                <div class="about__spec-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="2" y1="12" x2="22" y2="12"/>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </div>
+                <div class="about__spec-content">
+                  <span class="about__spec-label">Bahasa</span>
+                  <strong class="about__spec-value">Bahasa Indonesia (Fasih)</strong>
+                  <span class="about__spec-sub">English (Dasar)</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Kolom Kanan: Rekognisi & Prestasi Akademik Unggulan -->
+          <div class="about__honors-column reveal-on-scroll">
+            <div class="about__honors-header">
+              <div class="about__honors-badge">
+                <span class="about__honors-dot" aria-hidden="true"></span>
+                <span>Prestasi Akademik</span>
+              </div>
+              <h3 class="about__honors-title">Rekognisi &amp; Publikasi Ilmiah</h3>
+              <p class="about__honors-subtitle">Bukti konsistensi performa akademik dan kontribusi riset terpublikasi.</p>
+            </div>
+
+            <div class="about__honors-cards">
+              
+              <!-- Pencapaian 1: Lulusan dengan Predikat Dengan Pujian (Cumlaude) -->
+              <div class="achievement-card achievement-card--cumlaude">
+                <div class="achievement-card__decor" aria-hidden="true"></div>
+                <div class="achievement-card__top">
+                  <div class="achievement-card__icon-box" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="8" r="6"/>
+                      <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/>
+                    </svg>
+                  </div>
+                  <div class="achievement-card__meta">
+                    <span class="achievement-card__year">2026</span>
+                    <span class="achievement-card__badge achievement-card__badge--gold">Cumlaude &bull; IPK 3.98/4.00</span>
+                  </div>
+                </div>
+
+                <div class="achievement-card__body">
+                  <h4 class="achievement-card__heading">Lulusan dengan Predikat Dengan Pujian</h4>
+                  <p class="achievement-card__text">
+                    Menyelesaikan studi diploma dengan predikat <strong>Dengan Pujian (Cumlaude)</strong> pada Periode Oktober 2026. Memperoleh <strong>IPK 3.98/4.00</strong> dengan masa studi tepat waktu (<strong>3 Tahun 0 Bulan</strong>) sebagai bukti konsistensi dalam menjaga prestasi akademik serta kemampuan mengelola waktu dan tanggung jawab.
+                  </p>
+                  <div class="achievement-card__tags">
+                    <span class="achievement-tag">Predikat Cumlaude</span>
+                    <span class="achievement-tag">Masa Studi 3 Tahun</span>
+                    <span class="achievement-tag">D3 Manajemen Informatika</span>
+                  </div>
+                  <a href="assets/doc/ijazah.pdf" class="achievement-card__link" target="_blank" rel="noopener noreferrer">
+                    <span>Lihat Piagam Penghargaan</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M15 3h6v6"/>
+                      <path d="M10 14 21 3"/>
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Pencapaian 2: Publikasi Artikel Ilmiah Jurnal Sinta 5 -->
+              <div class="achievement-card achievement-card--journal">
+                <div class="achievement-card__decor" aria-hidden="true"></div>
+                <div class="achievement-card__top">
+                  <div class="achievement-card__icon-box" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+                      <path d="M6 6h10M6 10h10M6 14h6"/>
+                    </svg>
+                  </div>
+                  <div class="achievement-card__meta">
+                    <span class="achievement-card__year">2025</span>
+                    <span class="achievement-card__badge achievement-card__badge--sinta">Penulis Pertama &bull; Sinta 5</span>
+                  </div>
+                </div>
+
+                <div class="achievement-card__body">
+                  <h4 class="achievement-card__heading">Publikasi Artikel Ilmiah Jurnal Sinta 5</h4>
+                  <p class="achievement-card__text">
+                    Mempublikasikan artikel ilmiah sebagai <strong>penulis pertama</strong> mengenai perancangan sistem informasi manajemen magang mahasiswa pada <em>Jurnal Informatika dan Teknik Elektro Terapan (JITET)</em>, jurnal terindeks <strong>Sinta 5</strong> (Volume 13, No 3, 2025). Penelitian ini membahas rancangan sistem untuk mempermudah pengelolaan data magang mahasiswa.
+                  </p>
+                  <div class="achievement-card__tags">
+                    <span class="achievement-tag">Penulis Pertama (First Author)</span>
+                    <span class="achievement-tag">Jurnal JITET</span>
+                    <span class="achievement-tag">Terindeks Sinta 5 (Vol. 13)</span>
+                  </div>
+                  <a href="https://doi.org/10.23960/jitet.v13i3.6753" class="achievement-card__link" target="_blank" rel="noopener noreferrer">
+                    <span>Lihat Jurnal</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M15 3h6v6"/>
+                      <path d="M10 14 21 3"/>
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- =========================================================
+             Sub-Bagian: Slider / Carousel Pelatihan & Sertifikasi (Horizontal Scroll)
+             ========================================================= -->
+        <div class="about__trainings-section reveal-on-scroll">
+          <div class="trainings-section__header">
+            <div class="trainings-section__title-group">
+              <div class="about__trainings-badge">
+                <span class="about__trainings-dot" aria-hidden="true"></span>
+                <span>8 Pelatihan &bull; Terverifikasi</span>
+              </div>
+              <h3 class="trainings-section__title">Pelatihan &amp; Workshop Bersertifikat</h3>
+              <p class="trainings-section__subtitle">Geser ke samping untuk melihat sertifikat pelatihan yang telah saya ikuti.</p>
+            </div>
+
+          </div>
+
+          <!-- Jalur Geser Horizontal (Horizontal Carousel Track) -->
+          <div class="trainings-carousel">
+            <div class="carousel-nav">
+              <button type="button" class="carousel-nav__btn" id="cert-prev" aria-label="Geser ke sertifikat sebelumnya" title="Sertifikat Sebelumnya">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="19" y1="12" x2="5" y2="12"></line>
+                  <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+              </button>
+            </div>
+            <div class="trainings-track" id="trainings-track">
+              
+              <!-- Pelatihan 1: ECFSAW 2026 -->
+              <article class="cert-card">
+                <div class="cert-card__media">
+                  <!-- GANTI: Ganti src="assets/img/cert-placeholder.svg" dengan scan/foto sertifikat asli Anda -->
+                  <img src="assets/img/project-1.svg" alt="Pratinjau Sertifikat ECFSAW 2026" class="cert-card__img" loading="lazy" width="600" height="420">
+                  <div class="cert-card__overlay">
+                    <span class="cert-card__preview-badge">Sertifikat Resmi</span>
+                  </div>
+                  <span class="cert-card__year">2026</span>
+                </div>
+                <div class="cert-card__body">
+                  <span class="cert-card__category">Bahasa &amp; Komunikasi Global</span>
+                  <h4 class="cert-card__title">English Conversation, Free Speaking and Academic Writing (ECFSAW)</h4>
+                  <div class="cert-card__issuer">
+                    <svg class="cert-card__issuer-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M3 21h18"/>
+                      <path d="M5 21V7l7-4 7 4v14"/>
+                    </svg>
+                    <span>UPT Bahasa Universitas Sriwijaya</span>
+                  </div>
+                  <p class="cert-card__desc">
+                    Pelatihan intensif kefasihan percakapan bahasa Inggris, teknik <em>public speaking</em>, serta penulisan akademik formal untuk menunjang komunikasi profesional.
+                  </p>
+                  <!-- GANTI: Tautan file sertifikat asli (PDF / JPG) -->
+                  <a href="assets/img/project-1.svg" class="btn btn--small btn--primary cert-card__btn" target="_blank" rel="noopener noreferrer">
+                    <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    <span>Lihat Sertifikat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Pelatihan 2: Workshop UI/UX Mastering 2025 -->
+              <article class="cert-card">
+                <div class="cert-card__media">
+                  <!-- GANTI: Ganti src dengan file sertifikat Anda -->
+                  <img src="assets/img/project-1.svg" alt="Pratinjau Sertifikat Workshop UI/UX Mastering 2025" class="cert-card__img" loading="lazy" width="600" height="420">
+                  <div class="cert-card__overlay">
+                    <span class="cert-card__preview-badge">Sertifikat Resmi</span>
+                  </div>
+                  <span class="cert-card__year">2025</span>
+                </div>
+                <div class="cert-card__body">
+                  <span class="cert-card__category">UI/UX &amp; Desain Produk</span>
+                  <h4 class="cert-card__title">Workshop UI/UX Mastering</h4>
+                  <div class="cert-card__issuer">
+                    <svg class="cert-card__issuer-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M3 21h18"/>
+                      <path d="M5 21V7l7-4 7 4v14"/>
+                    </svg>
+                    <span>Himpunan Mahasiswa Sistem Informasi Universitas Sriwijaya</span>
+                  </div>
+                  <p class="cert-card__desc">
+                    Pendalaman metodologi riset pengguna, perancangan antarmuka visual modern, penyusunan design system, dan pengujian prototipe interaktif pada Figma.
+                  </p>
+                  <!-- GANTI: Tautan file sertifikat asli -->
+                  <a href="assets/img/cert-placeholder.svg" class="btn btn--small btn--primary cert-card__btn" target="_blank" rel="noopener noreferrer">
+                    <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    <span>Lihat Sertifikat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Pelatihan 3: Workshop Fiber Optic 2024 -->
+              <article class="cert-card">
+                <div class="cert-card__media">
+                  <!-- GANTI: Ganti src dengan file sertifikat Anda -->
+                  <img src="assets/img/project-1.svg" alt="Pratinjau Sertifikat Workshop Fiber Optic 2024" class="cert-card__img" loading="lazy" width="600" height="420">
+                  <div class="cert-card__overlay">
+                    <span class="cert-card__preview-badge">Sertifikat Resmi</span>
+                  </div>
+                  <span class="cert-card__year">2024</span>
+                </div>
+                <div class="cert-card__body">
+                  <span class="cert-card__category">Jaringan &amp; Infrastruktur IT</span>
+                  <h4 class="cert-card__title">Workshop Fiber Optic</h4>
+                  <div class="cert-card__issuer">
+                    <svg class="cert-card__issuer-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M3 21h18"/>
+                      <path d="M5 21V7l7-4 7 4v14"/>
+                    </svg>
+                    <span>COMNETS Research Group Universitas Sriwijaya</span>
+                  </div>
+                  <p class="cert-card__desc">
+                    Praktik teknik instalasi, penyambungan fusi (*fusion splicing*), pengukuran redaman kabel optik, serta pemeliharaan infrastruktur jaringan kecepatan tinggi.
+                  </p>
+                  <!-- GANTI: Tautan file sertifikat asli -->
+                  <a href="assets/img/cert-placeholder.svg" class="btn btn--small btn--primary cert-card__btn" target="_blank" rel="noopener noreferrer">
+                    <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    <span>Lihat Sertifikat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Pelatihan 4: Webinar Desain 2024 -->
+              <article class="cert-card">
+                <div class="cert-card__media">
+                  <!-- GANTI: Ganti src dengan file sertifikat Anda -->
+                  <img src="assets/img/cert-placeholder.svg" alt="Pratinjau Sertifikat Webinar Desain 2024" class="cert-card__img" loading="lazy" width="600" height="420">
+                  <div class="cert-card__overlay">
+                    <span class="cert-card__preview-badge">Sertifikat Resmi</span>
+                  </div>
+                  <span class="cert-card__year">2024</span>
+                </div>
+                <div class="cert-card__body">
+                  <span class="cert-card__category">Desain Grafis &amp; Visual</span>
+                  <h4 class="cert-card__title">Webinar Desain</h4>
+                  <div class="cert-card__issuer">
+                    <svg class="cert-card__issuer-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M3 21h18"/>
+                      <path d="M5 21V7l7-4 7 4v14"/>
+                    </svg>
+                    <span>Himpunan Mahasiswa Informatika Universitas Sriwijaya</span>
+                  </div>
+                  <p class="cert-card__desc">
+                    Eksplorasi prinsip hierarki visual, pemilihan tipografi terpadu, psikologi warna, dan strategi penyampaian pesan melalui materi media visual digital.
+                  </p>
+                  <!-- GANTI: Tautan file sertifikat asli -->
+                  <a href="assets/img/cert-placeholder.svg" class="btn btn--small btn--primary cert-card__btn" target="_blank" rel="noopener noreferrer">
+                    <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    <span>Lihat Sertifikat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Pelatihan 5: Workshop Desain Grafis 2024 -->
+              <article class="cert-card">
+                <div class="cert-card__media">
+                  <!-- GANTI: Ganti src dengan file sertifikat Anda -->
+                  <img src="assets/img/cert-placeholder.svg" alt="Pratinjau Sertifikat Workshop Desain Grafis 2024" class="cert-card__img" loading="lazy" width="600" height="420">
+                  <div class="cert-card__overlay">
+                    <span class="cert-card__preview-badge">Sertifikat Resmi</span>
+                  </div>
+                  <span class="cert-card__year">2024</span>
+                </div>
+                <div class="cert-card__body">
+                  <span class="cert-card__category">Perangkat Lunak Desain &amp; Branding</span>
+                  <h4 class="cert-card__title">Workshop Desain Grafis</h4>
+                  <div class="cert-card__issuer">
+                    <svg class="cert-card__issuer-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M3 21h18"/>
+                      <path d="M5 21V7l7-4 7 4v14"/>
+                    </svg>
+                    <span>Departemen Informasi dan Komunikasi BEM Universitas Sriwijaya</span>
+                  </div>
+                  <p class="cert-card__desc">
+                    Pelatihan praktis desain terapan menggunakan Adobe Photoshop dan CorelDRAW untuk poster resmi, aset promosi digital, dan publikasi organisasi.
+                  </p>
+                  <!-- GANTI: Tautan file sertifikat asli -->
+                  <a href="assets/img/cert-placeholder.svg" class="btn btn--small btn--primary cert-card__btn" target="_blank" rel="noopener noreferrer">
+                    <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    <span>Lihat Sertifikat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Pelatihan 6: Webinar Karya Tulis Ilmiah 2024 -->
+              <article class="cert-card">
+                <div class="cert-card__media">
+                  <!-- GANTI: Ganti src dengan file sertifikat Anda -->
+                  <img src="assets/img/cert-placeholder.svg" alt="Pratinjau Sertifikat Webinar Karya Tulis Ilmiah 2024" class="cert-card__img" loading="lazy" width="600" height="420">
+                  <div class="cert-card__overlay">
+                    <span class="cert-card__preview-badge">Sertifikat Resmi</span>
+                  </div>
+                  <span class="cert-card__year">2024</span>
+                </div>
+                <div class="cert-card__body">
+                  <span class="cert-card__category">Metodologi &amp; Penulisan Ilmiah</span>
+                  <h4 class="cert-card__title">Webinar Karya Tulis Ilmiah</h4>
+                  <div class="cert-card__issuer">
+                    <svg class="cert-card__issuer-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M3 21h18"/>
+                      <path d="M5 21V7l7-4 7 4v14"/>
+                    </svg>
+                    <span>Departemen Manajemen Universitas Malikussaleh</span>
+                  </div>
+                  <p class="cert-card__desc">
+                    Pembekalan metodologi perumusan masalah, teknik sitasi standar akademik, pengolahan data penelitian, serta strategi publikasi pada jurnal ilmiah bereputasi.
+                  </p>
+                  <!-- GANTI: Tautan file sertifikat asli -->
+                  <a href="assets/img/cert-placeholder.svg" class="btn btn--small btn--primary cert-card__btn" target="_blank" rel="noopener noreferrer">
+                    <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    <span>Lihat Sertifikat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Pelatihan 7: Webinar Humas Nasional 2024 -->
+              <article class="cert-card">
+                <div class="cert-card__media">
+                  <!-- GANTI: Ganti src dengan file sertifikat Anda -->
+                  <img src="assets/img/cert-placeholder.svg" alt="Pratinjau Sertifikat Webinar Humas Nasional 2024" class="cert-card__img" loading="lazy" width="600" height="420">
+                  <div class="cert-card__overlay">
+                    <span class="cert-card__preview-badge">Sertifikat Resmi</span>
+                  </div>
+                  <span class="cert-card__year">2024</span>
+                </div>
+                <div class="cert-card__body">
+                  <span class="cert-card__category">Relasi Publik &amp; Komunikasi</span>
+                  <h4 class="cert-card__title">Webinar Humas Nasional</h4>
+                  <div class="cert-card__issuer">
+                    <svg class="cert-card__issuer-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M3 21h18"/>
+                      <path d="M5 21V7l7-4 7 4v14"/>
+                    </svg>
+                    <span>BO Cogito Fakultas Ilmu Sosial dan Ilmu Politik Universitas Sriwijaya</span>
+                  </div>
+                  <p class="cert-card__desc">
+                    Pelatihan manajemen citra institusi, strategi hubungan media, manajemen komunikasi krisis, serta etika profesional bagi praktisi hubungan masyarakat.
+                  </p>
+                  <!-- GANTI: Tautan file sertifikat asli -->
+                  <a href="assets/img/cert-placeholder.svg" class="btn btn--small btn--primary cert-card__btn" target="_blank" rel="noopener noreferrer">
+                    <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    <span>Lihat Sertifikat</span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Pelatihan 8: Workshop Pembuatan Website 2024 -->
+              <article class="cert-card">
+                <div class="cert-card__media">
+                  <!-- GANTI: Ganti src dengan file sertifikat Anda -->
+                  <img src="assets/img/cert-placeholder.svg" alt="Pratinjau Sertifikat Workshop Pembuatan Website 2024" class="cert-card__img" loading="lazy" width="600" height="420">
+                  <div class="cert-card__overlay">
+                    <span class="cert-card__preview-badge">Sertifikat Resmi</span>
+                  </div>
+                  <span class="cert-card__year">2024</span>
+                </div>
+                <div class="cert-card__body">
+                  <span class="cert-card__category">Web Development &amp; Frontend</span>
+                  <h4 class="cert-card__title">Workshop Pembuatan Website</h4>
+                  <div class="cert-card__issuer">
+                    <svg class="cert-card__issuer-icon" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M3 21h18"/>
+                      <path d="M5 21V7l7-4 7 4v14"/>
+                    </svg>
+                    <span>Himpunan Diploma Komputer Universitas Sriwijaya</span>
+                  </div>
+                  <p class="cert-card__desc">
+                    Praktik pembuatan website responsif dari dasar dengan struktur HTML5 semantik, CSS3 Flexbox &amp; Grid modern, serta manipulasi interaktif DOM JavaScript.
+                  </p>
+                  <!-- GANTI: Tautan file sertifikat asli -->
+                  <a href="assets/img/cert-placeholder.svg" class="btn btn--small btn--primary cert-card__btn" target="_blank" rel="noopener noreferrer">
+                    <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                      <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    <span>Lihat Sertifikat</span>
+                  </a>
+                </div>
+              </article>
+
+            </div>
+            <div class="carousel-nav">
+              <button type="button" class="carousel-nav__btn" id="cert-next" aria-label="Geser ke sertifikat selanjutnya" title="Sertifikat Selanjutnya">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         4. KEAHLIAN (Skills Section)
+         ========================================================= -->
+    <section class="skills section" id="keahlian">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-header__tag">Keahlian &amp; Kapabilitas</span>
+          <h2 class="section-header__title">Kombinasi Keterampilan Teknis &amp; Manajerial</h2>
+          <div class="section-header__line" aria-hidden="true"></div>
+        </div>
+
+        <div class="skills__grid">
+          
+          <!-- Kategori 1: Web Development -->
+          <div class="skill-card reveal-on-scroll">
+            <div class="skill-card__header">
+              <div class="skill-card__icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-card__title">Web Development</h3>
+                <span class="skill-card__subtitle">Frontend &amp; Fondasi Backend</span>
+              </div>
+            </div>
+            <p class="skill-card__desc">Membangun website dari nol yang responsif, semantic, berorientasi performa, dan mudah dirawat.</p>
+            <!-- GANTI: Tambah atau kurangi keahlian sesuai kemampuan Anda -->
+            <ul class="badge-list" aria-label="Daftar keahlian Web Development">
+              <li class="badge">HTML5 Semantik</li>
+              <li class="badge">CSS3 / Grid &amp; Flexbox</li>
+              <li class="badge">Vanilla JavaScript</li>
+              <li class="badge">PHP Dasar &amp; OOP</li>
+              <li class="badge">MySQL Database</li>
+              <li class="badge">Git &amp; GitHub</li>
+              <li class="badge">Responsive Design</li>
+              <li class="badge">REST API Dasar</li>
+            </ul>
+          </div>
+
+          <!-- Kategori 2: Desain Grafis & Multimedia -->
+          <div class="skill-card reveal-on-scroll">
+            <div class="skill-card__header">
+              <div class="skill-card__icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m12 19 7-7 3 3-7 7-3-3z"/>
+                  <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                  <path d="m2 2 7.586 7.586"/>
+                  <circle cx="11" cy="11" r="2"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-card__title">Desain &amp; Multimedia</h3>
+                <span class="skill-card__subtitle">Visual Branding &amp; UI/UX</span>
+              </div>
+            </div>
+            <p class="skill-card__desc">Merancang identitas visual yang serasi, mockup antarmuka pengguna, dan materi multimedia kreatif.</p>
+            <!-- GANTI: Daftar software desain yang Anda kuasai -->
+            <ul class="badge-list" aria-label="Daftar keahlian Desain Grafis">
+              <li class="badge">Figma UI/UX Mockup</li>
+              <li class="badge">Adobe Photoshop</li>
+              <li class="badge">Canva Pro</li>
+              <li class="badge">CorelDRAW</li>
+              <li class="badge">Video Editing (CapCut/Premiere)</li>
+              <li class="badge">Branding &amp; Layout</li>
+              <li class="badge">Content Creation</li>
+            </ul>
+          </div>
+
+          <!-- Kategori 3: Administrasi & Manajemen Data -->
+          <div class="skill-card reveal-on-scroll">
+            <div class="skill-card__header">
+              <div class="skill-card__icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                  <polyline points="10 9 9 9 8 9"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-card__title">Administrasi &amp; Data</h3>
+                <span class="skill-card__subtitle">Operasional &amp; Tata Kelola</span>
+              </div>
+            </div>
+            <p class="skill-card__desc">Mendukung kelancaran operasional melalui pengarsipan digital, pengolahan data akurat, dan surat-menyurat.</p>
+            <!-- GANTI: Daftar keahlian administrasi dan perkantoran -->
+            <ul class="badge-list" aria-label="Daftar keahlian Administrasi">
+              <li class="badge">Microsoft Excel Lanjut</li>
+              <li class="badge">Google Workspace / Sheets</li>
+              <li class="badge">Pengarsipan Digital</li>
+              <li class="badge">Entri Data Cepat &amp; Teliti</li>
+              <li class="badge">Penyusunan Laporan Internal</li>
+              <li class="badge">Administrasi Bisnis Digital</li>
+              <li class="badge">Korespondensi Formal</li>
+            </ul>
+          </div>
+
+          <!-- Kategori 4: Soft Skills & Kolaborasi -->
+          <div class="skill-card reveal-on-scroll">
+            <div class="skill-card__header">
+              <div class="skill-card__icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="skill-card__title">Soft Skills &amp; Nilai</h3>
+                <span class="skill-card__subtitle">Kolaborasi &amp; Mindset Kerja</span>
+              </div>
+            </div>
+            <p class="skill-card__desc">Karakter personal yang menjamin kerja sama tim berjalan efektif, harmonis, dan tepat waktu.</p>
+            <!-- GANTI: Soft skills yang menjadi kekuatan kepribadian Anda -->
+            <ul class="badge-list" aria-label="Daftar Soft Skills">
+              <li class="badge">Problem Solving Kritis</li>
+              <li class="badge">Komunikasi Terbuka &amp; Sopan</li>
+              <li class="badge">Manajemen Waktu Disiplin</li>
+              <li class="badge">Cepat Beradaptasi</li>
+              <li class="badge">Kolaborasi Tim Lintas Bidang</li>
+              <li class="badge">Keingintahuan Belajar Tinggi</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         5. PROYEK (Projects Showcase Section)
+         ========================================================= -->
+    <section class="projects section" id="proyek">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-header__tag">Portofolio Terpilih</span>
+          <h2 class="section-header__title">Karya Nyata yang Menyelesaikan Masalah</h2>
+          <div class="section-header__line" aria-hidden="true"></div>
+        </div>
+
+        <p class="section-subtext reveal-on-scroll">
+          Berikut adalah beberapa proyek unggulan dengan pendekatan <em>Masalah &rarr; Solusi &rarr; Hasil</em> yang mencerminkan kapabilitas teknis dan estetika saya.
+        </p>
+
+        <div class="projects__filters" role="group" aria-label="Filter kategori proyek">
+          <button type="button" class="projects__filter is-active" data-project-filter="all" aria-pressed="true">Semua</button>
+          <button type="button" class="projects__filter" data-project-filter="programming" aria-pressed="false">Pemrograman</button>
+          <button type="button" class="projects__filter" data-project-filter="design" aria-pressed="false">Desain</button>
+          <button type="button" class="projects__filter" data-project-filter="multimedia" aria-pressed="false">Multimedia</button>
+        </div>
+
+        <div class="projects__carousel-controls" aria-label="Navigasi proyek">
+          <button type="button" class="projects__carousel-btn" id="projects-prev" aria-label="Lihat proyek sebelumnya" title="Proyek sebelumnya">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m15 18-6-6 6-6"/>
+            </svg>
+          </button>
+          <span class="projects__carousel-status" id="projects-status" aria-live="polite">Proyek 2 dari 5</span>
+          <button type="button" class="projects__carousel-btn" id="projects-next" aria-label="Lihat proyek berikutnya" title="Proyek berikutnya">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m9 18 6-6-6-6"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="projects__grid" id="projects-track">
+          
+          <!-- PROYEK 1: UMKM Batik Kencana -->
+          <article class="project-card reveal-on-scroll" data-project-category="programming">
+            <div class="project-card__media">
+              <!-- GANTI: Ganti src gambar dengan screenshot proyek asli Anda -->
+              <img src="assets/img/aplikasi-rps.png" alt="Preview antarmuka Website Katalog UMKM Batik Kencana" class="project-card__img" loading="lazy" width="600" height="380">
+              <span class="project-card__category-tag">E-Commerce &amp; Katalog UMKM</span>
+            </div>
+            
+            <div class="project-card__body">
+              <!-- GANTI: Judul Proyek 1 -->
+              <h3 class="project-card__title">Website Katalog Digital &amp; Kasir Chat Batik Kencana</h3>
+              <p class="project-card__description">Katalog digital responsif dengan filter produk dan alur pemesanan WhatsApp yang lebih cepat untuk UMKM.</p>
+              
+              <!-- Pola Masalah - Solusi - Hasil -->
+              <div class="project-card__psr">
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--problem">Masalah</span>
+                  <p class="psr-item__text">UMKM kain batik mengalami kesulitan melayani ratusan pertanyaan stok manual via WhatsApp tanpa katalog terpusat.</p>
+                </div>
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--solution">Solusi</span>
+                  <p class="psr-item__text">Merancang website katalog ringan dengan filter motif instan dan tombol pemesanan otomatis terformat ke WhatsApp penjual.</p>
+                </div>
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--result">Hasil</span>
+                  <p class="psr-item__text">Memotong waktu konfirmasi pesanan hingga 60% dan meningkatkan kesan profesionalitas brand UMKM.</p>
+                </div>
+              </div>
+
+              <!-- Tech Stack Tags -->
+              <div class="project-card__tech">
+                <span class="tech-tag">HTML5 Semantik</span>
+                <span class="tech-tag">CSS3 Grid</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">PHP Dasar</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-card__links">
+                <!-- GANTI: Masukkan link demo asli atau GitHub repo Anda -->
+                <a href="#kontak" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">
+                  <span>Lihat Demo</span>
+                  <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+                <a href="#kontak" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">
+                  <span>Source Code</span>
+                  <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYEK 2: Sistem Informasi Inventaris -->
+          <article class="project-card reveal-on-scroll" data-project-category="programming">
+            <div class="project-card__media">
+              <!-- GANTI: Ganti src gambar dengan screenshot proyek asli Anda -->
+              <img src="assets/img/aplikasi-rps.png" alt="Preview antarmuka Sistem Informasi Inventaris dan Aset Kantor" class="project-card__img" loading="lazy" width="600" height="380">
+              <span class="project-card__category-tag">Sistem Informasi &amp; Administrasi</span>
+            </div>
+            
+            <div class="project-card__body">
+              <!-- GANTI: Judul Proyek 2 -->
+              <h3 class="project-card__title">SIM-Aset: Sistem Manajemen Inventaris &amp; Peminjaman Kantor</h3>
+              <p class="project-card__description">Web app internal untuk memantau aset, peminjaman, status barang, dan rekap administrasi kantor.</p>
+              
+              <!-- Pola Masalah - Solusi - Hasil -->
+              <div class="project-card__psr">
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--problem">Masalah</span>
+                  <p class="psr-item__text">Pencatatan aset perangkat keras dan peminjaman fasilitas kantor masih menggunakan buku fisik yang rawan hilang.</p>
+                </div>
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--solution">Solusi</span>
+                  <p class="psr-item__text">Membangun web app internal berbasis database terpusat dengan dashboard status barang, barcode tracker, dan export PDF.</p>
+                </div>
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--result">Hasil</span>
+                  <p class="psr-item__text">Menekan potensi salah catat hingga 95% serta mempermudah rekap audit bulanan bagian tata usaha.</p>
+                </div>
+              </div>
+
+              <!-- Tech Stack Tags -->
+              <div class="project-card__tech">
+                <span class="tech-tag">PHP Native</span>
+                <span class="tech-tag">MySQL Database</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Admin Dashboard UI</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-card__links">
+                <!-- GANTI: Masukkan link demo asli atau GitHub repo Anda -->
+                <a href="#kontak" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">
+                  <span>Lihat Demo</span>
+                  <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+                <a href="#kontak" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">
+                  <span>Source Code</span>
+                  <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYEK 3: Landing Page Content Creator Studio -->
+          <article class="project-card reveal-on-scroll" data-project-category="design multimedia">
+            <div class="project-card__media">
+              <!-- GANTI: Ganti src gambar dengan screenshot proyek asli Anda -->
+              <img src="assets/img/project-3.svg" alt="Preview antarmuka Landing Page Media Kit Creator Studio" class="project-card__img" loading="lazy" width="600" height="380">
+              <span class="project-card__category-tag">Creative &amp; Multimedia</span>
+            </div>
+            
+            <div class="project-card__body">
+              <!-- GANTI: Judul Proyek 3 -->
+              <h3 class="project-card__title">Landing Page &amp; Interactive Media Kit Creator Studio</h3>
+              <p class="project-card__description">Media kit interaktif yang menyatukan showcase visual, metrik engagement, dan jalur inquiry kolaborasi.</p>
+              
+              <!-- Pola Masalah - Solusi - Hasil -->
+              <div class="project-card__psr">
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--problem">Masalah</span>
+                  <p class="psr-item__text">Kreator konten digital membutuhkan satu halaman terpadu untuk menunjukkan portofolio video, data demografi penonton, dan rate card sponsor.</p>
+                </div>
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--solution">Solusi</span>
+                  <p class="psr-item__text">Mengembangkan landing page interaktif dengan video showcase modal, grafik engagement metriks, dan form inquiry kolaborasi.</p>
+                </div>
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--result">Hasil</span>
+                  <p class="psr-item__text">Meningkatkan konversi kerja sama brand sponsor sebesar 45% berkat presentasi data yang rapi dan elegan.</p>
+                </div>
+              </div>
+
+              <!-- Tech Stack Tags -->
+              <div class="project-card__tech">
+                <span class="tech-tag">HTML5 / CSS3 Modern</span>
+                <span class="tech-tag">Figma UI/UX</span>
+                <span class="tech-tag">Vanilla JS</span>
+                <span class="tech-tag">Glassmorphism</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-card__links">
+                <!-- GANTI: Masukkan link demo asli atau GitHub repo Anda -->
+                <a href="#kontak" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">
+                  <span>Lihat Demo</span>
+                  <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+                <a href="#kontak" class="btn btn--small btn--outline" target="_blank" rel="noopener noreferrer">
+                  <span>Source Code</span>
+                  <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYEK 4: Sistem Informasi Akademik RPS -->
+          <article class="project-card reveal-on-scroll" data-project-category="programming">
+            <div class="project-card__media">
+              <img src="assets/img/aplikasi-rps.png" alt="Preview antarmuka Sistem Informasi Akademik RPS" class="project-card__img" loading="lazy" width="600" height="380">
+              <span class="project-card__category-tag">EdTech &amp; Sistem Akademik</span>
+            </div>
+
+            <div class="project-card__body">
+              <h3 class="project-card__title">Sistem Informasi Akademik &amp; Manajemen RPS</h3>
+              <p class="project-card__description">Dashboard akademik terpusat untuk mengelola mata kuliah, capaian pembelajaran, dan dokumen RPS.</p>
+
+              <div class="project-card__psr">
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--problem">Masalah</span>
+                  <p class="psr-item__text">Penyusunan dan pembaruan RPS masih tersebar di banyak dokumen sehingga sulit dilacak oleh dosen dan mahasiswa.</p>
+                </div>
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--solution">Solusi</span>
+                  <p class="psr-item__text">Merancang dashboard terpusat untuk mengelola mata kuliah, capaian pembelajaran, dan dokumen RPS secara terstruktur.</p>
+                </div>
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--result">Hasil</span>
+                  <p class="psr-item__text">Memudahkan pencarian dokumen akademik dan meningkatkan konsistensi pembaruan materi perkuliahan.</p>
+                </div>
+              </div>
+
+              <div class="project-card__tech">
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">PHP &amp; MySQL</span>
+                <span class="tech-tag">Dashboard UI</span>
+              </div>
+
+              <div class="project-card__links">
+                <a href="#kontak" class="btn btn--small btn--primary">
+                  <span>Lihat Demo</span>
+                  <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+                <a href="#kontak" class="btn btn--small btn--outline">
+                  <span>Source Code</span>
+                  <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROYEK 5: Dashboard Arsip Digital -->
+          <article class="project-card reveal-on-scroll" data-project-category="programming">
+            <div class="project-card__media">
+              <img src="assets/img/project-2.svg" alt="Preview Dashboard Arsip Digital dan Pelaporan" class="project-card__img" loading="lazy" width="600" height="380">
+              <span class="project-card__category-tag">Data &amp; Operasional</span>
+            </div>
+
+            <div class="project-card__body">
+              <h3 class="project-card__title">Dashboard Arsip Digital &amp; Pelaporan Operasional</h3>
+              <p class="project-card__description">Dashboard ringkas untuk pencarian arsip, status dokumen, filter periode, dan pelaporan operasional.</p>
+
+              <div class="project-card__psr">
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--problem">Masalah</span>
+                  <p class="psr-item__text">Arsip digital dan laporan operasional sulit dipantau karena tersimpan di folder terpisah tanpa ringkasan status.</p>
+                </div>
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--solution">Solusi</span>
+                  <p class="psr-item__text">Membuat dashboard ringkas dengan pencarian arsip, status dokumen, filter periode, dan rekap laporan berkala.</p>
+                </div>
+                <div class="psr-item">
+                  <span class="psr-item__badge psr-item__badge--result">Hasil</span>
+                  <p class="psr-item__text">Mempercepat pengecekan dokumen dan membantu tim menjaga alur kerja tetap terukur.</p>
+                </div>
+              </div>
+
+              <div class="project-card__tech">
+                <span class="tech-tag">Responsive UI</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Data Table</span>
+                <span class="tech-tag">Export Report</span>
+              </div>
+
+              <div class="project-card__links">
+                <a href="#kontak" class="btn btn--small btn--primary">
+                  <span>Lihat Demo</span>
+                  <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
+                </a>
+                <a href="#kontak" class="btn btn--small btn--outline">
+                  <span>Source Code</span>
+                  <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         6. PENGALAMAN (Timeline Section)
+         ========================================================= -->
+    <section class="experience section" id="pengalaman">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-header__tag">Rekam Jejak</span>
+          <h2 class="section-header__title">Pengalaman Kerja, Penelitian &amp; Organisasi</h2>
+          <div class="section-header__line" aria-hidden="true"></div>
+        </div>
+
+        <div class="timeline__toolbar reveal-on-scroll">
+          <div class="timeline__filters" role="group" aria-label="Filter kategori pengalaman">
+            <button type="button" class="timeline__filter is-active" data-experience-filter="all" aria-pressed="true">Semua</button>
+            <button type="button" class="timeline__filter" data-experience-filter="internship" aria-pressed="false">Magang</button>
+            <button type="button" class="timeline__filter" data-experience-filter="community" aria-pressed="false">Pengabdian Masyarakat</button>
+            <button type="button" class="timeline__filter" data-experience-filter="research" aria-pressed="false">Penelitian</button>
+            <button type="button" class="timeline__filter" data-experience-filter="organization" aria-pressed="false">Organisasi</button>
+          </div>
+          <p class="timeline__hint">Pilih kategori, lalu buka setiap pengalaman untuk melihat bukti pendukung.</p>
+        </div>
+
+        <div class="timeline" id="experience-timeline">
+          
+          <!-- Timeline Item 1: Magang -->
+          <div class="timeline__item reveal-on-scroll" data-experience-category="internship">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <!-- GANTI: Periode dan tipe aktivitas -->
+                <span class="timeline__period">Februari 2024 &ndash; Juli 2024</span>
+                <span class="timeline__badge">Magang Industri</span>
+              </div>
+              <!-- GANTI: Posisi dan nama institusi/perusahaan -->
+              <h3 class="timeline__title">Junior Front-End Developer &amp; Staff Administrasi IT</h3>
+              <h4 class="timeline__company">Dinas Komunikasi &amp; Informatika (Diskominfo) / Perusahaan IT</h4>
+              <p class="timeline__desc">Terlibat langsung dalam pemeliharaan antarmuka portal layanan publik dan tata kelola dokumentasi administrasi teknis.</p>
+              <ul class="timeline__points">
+                <li>Mengembangkan dan merestrukturisasi halaman web responsive menggunakan HTML5, CSS3, dan vanilla JavaScript untuk 3 modul layanan publik.</li>
+                <li>Melakukan audit data dan pengarsipan digital 200+ berkas teknis proyek dengan Microsoft Excel dan sistem cloud instansi.</li>
+              </ul>
+              <button type="button" class="timeline__docs-btn" data-docs-trigger data-docs-title="Dokumentasi Magang Industri" aria-controls="experience-docs-modal">
+                <span>Lihat Dokumentasi</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/>
+                </svg>
+              </button>
+              <details class="timeline__evidence timeline__evidence-source">
+                <summary>
+                  <span>Lihat dokumentasi &amp; bukti</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6"/>
+                  </svg>
+                </summary>
+                <div class="timeline__evidence-list">
+                  <div class="timeline__evidence-gallery">
+                    <a class="timeline__evidence-preview" href="assets/img/aplikasi-rps.png" target="_blank" rel="noopener noreferrer">
+                      <img src="assets/img/aplikasi-rps.png" alt="Contoh preview antarmuka sistem" loading="lazy" width="640" height="360">
+                      <span>Contoh antarmuka sistem</span>
+                    </a>
+                    <a class="timeline__evidence-preview" href="assets/img/project-3.svg" target="_blank" rel="noopener noreferrer">
+                      <img src="assets/img/project-3.svg" alt="Contoh dokumentasi proyek web" loading="lazy" width="600" height="380">
+                      <span>Contoh dokumentasi proyek</span>
+                    </a>
+                  </div>
+                  <div class="timeline__evidence-placeholder">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/>
+                    </svg>
+                    <span>Tambahkan foto atau scan bukti magang</span>
+                    <small>Letakkan file di folder assets/img atau assets/doc</small>
+                  </div>
+                  <span class="timeline__evidence-item"><strong>Dokumentasi pekerjaan</strong><small>Antarmuka portal dan alur administrasi teknis</small></span>
+                  <span class="timeline__evidence-item"><strong>Ringkasan kontribusi</strong><small>3 modul layanan publik dan 200+ berkas teknis</small></span>
+                  <span class="timeline__evidence-status">Dokumen pendukung dapat ditambahkan</span>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Pengabdian Masyarakat -->
+          <div class="timeline__item reveal-on-scroll" data-experience-category="community">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <!-- GANTI: Periode program -->
+                <span class="timeline__period">Agustus 2023 &ndash; Oktober 2023</span>
+                <span class="timeline__badge">Pengabdian Masyarakat</span>
+              </div>
+              <!-- GANTI: Posisi dan nama program -->
+              <h3 class="timeline__title">Koordinator Digitalisasi Desa &amp; Media Komunikasi</h3>
+              <h4 class="timeline__company">Program Kuliah Kerja Nyata (KKN) Tematik</h4>
+              <p class="timeline__desc">Memimpin program percepatan adopsi teknologi informasi bagi aparatur desa dan pelaku usaha mikro.</p>
+              <ul class="timeline__points">
+                <li>Membangun website profil desa sederhana untuk mempublikasikan transparansi anggaran serta potensi wisata lokal secara daring.</li>
+                <li>Menyelenggarakan pelatihan dasar komputer dan pembuatan katalog digital bagi 25+ pelaku UMKM desa.</li>
+              </ul>
+              <button type="button" class="timeline__docs-btn" data-docs-trigger data-docs-title="Dokumentasi Pengabdian Masyarakat" aria-controls="experience-docs-modal">
+                <span>Lihat Dokumentasi</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/>
+                </svg>
+              </button>
+              <details class="timeline__evidence timeline__evidence-source">
+                <summary>
+                  <span>Lihat dokumentasi &amp; bukti</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6"/>
+                  </svg>
+                </summary>
+                <div class="timeline__evidence-list">
+                  <div class="timeline__evidence-gallery">
+                    <a class="timeline__evidence-preview" href="assets/img/project-1.svg" target="_blank" rel="noopener noreferrer">
+                      <img src="assets/img/project-1.svg" alt="Contoh dokumentasi kegiatan digital" loading="lazy" width="600" height="380">
+                      <span>Contoh kegiatan digital</span>
+                    </a>
+                    <a class="timeline__evidence-preview" href="assets/img/project-2.svg" target="_blank" rel="noopener noreferrer">
+                      <img src="assets/img/project-2.svg" alt="Contoh materi visual kegiatan" loading="lazy" width="600" height="380">
+                      <span>Contoh materi visual</span>
+                    </a>
+                  </div>
+                  <div class="timeline__evidence-placeholder">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/>
+                    </svg>
+                    <span>Tambahkan foto kegiatan pengabdian</span>
+                    <small>Galeri dokumentasi dan sertifikat kegiatan</small>
+                  </div>
+                  <span class="timeline__evidence-item"><strong>Dokumentasi kegiatan</strong><small>Digitalisasi desa dan pendampingan pelaku UMKM</small></span>
+                  <span class="timeline__evidence-item"><strong>Materi pelatihan</strong><small>Komputer dasar dan katalog digital</small></span>
+                  <span class="timeline__evidence-status">Dokumen pendukung dapat ditambahkan</span>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Asisten Lab / Penelitian Kampus -->
+          <div class="timeline__item reveal-on-scroll" data-experience-category="research">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <!-- GANTI: Periode kegiatan akademik -->
+                <span class="timeline__period">Januari 2023 &ndash; Desember 2023</span>
+                <span class="timeline__badge">Akademik &amp; Penelitian</span>
+              </div>
+              <!-- GANTI: Peran penelitian/asisten lab -->
+              <h3 class="timeline__title">Asisten Laboratorium Pemrograman Web &amp; Basis Data</h3>
+              <h4 class="timeline__company">Program Studi D3 Manajemen Informatika</h4>
+              <p class="timeline__desc">Membantu dosen dalam penyelenggaraan praktikum web dev, evaluasi tugas mahasiswa, serta pemeliharaan server lokal.</p>
+              <ul class="timeline__points">
+                <li>Membimbing lebih dari 60 mahasiswa dalam memahami sintaks HTML, CSS, JavaScript, dan kueri SQL dasar.</li>
+                <li>Menulis modul panduan praktikum basis data yang ringkas dan mudah dipahami mahasiswa tingkat awal.</li>
+              </ul>
+              <button type="button" class="timeline__docs-btn" data-docs-trigger data-docs-title="Dokumentasi Penelitian dan Akademik" aria-controls="experience-docs-modal">
+                <span>Lihat Dokumentasi</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/>
+                </svg>
+              </button>
+              <details class="timeline__evidence timeline__evidence-source">
+                <summary>
+                  <span>Lihat dokumentasi &amp; bukti</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6"/>
+                  </svg>
+                </summary>
+                <div class="timeline__evidence-list">
+                  <div class="timeline__evidence-gallery">
+                    <a class="timeline__evidence-preview" href="assets/img/aplikasi-rps.png" target="_blank" rel="noopener noreferrer">
+                      <img src="assets/img/aplikasi-rps.png" alt="Preview aplikasi akademik" loading="lazy" width="640" height="360">
+                      <span>Preview sistem akademik</span>
+                    </a>
+                    <a class="timeline__evidence-preview" href="assets/img/project-3.svg" target="_blank" rel="noopener noreferrer">
+                      <img src="assets/img/project-3.svg" alt="Contoh visual proyek penelitian" loading="lazy" width="600" height="380">
+                      <span>Contoh visual proyek</span>
+                    </a>
+                  </div>
+                  <a class="timeline__evidence-item timeline__evidence-item--link" href="https://journal.eng.unila.ac.id/index.php/jitet" target="_blank" rel="noopener noreferrer"><strong>Publikasi Jurnal JITET</strong><small>Buka halaman jurnal dan publikasi terkait</small></a>
+                  <span class="timeline__evidence-item"><strong>Modul praktikum</strong><small>Panduan basis data untuk mahasiswa tingkat awal</small></span>
+                  <span class="timeline__evidence-status">Bukti lain dapat ditambahkan</span>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: Organisasi Kemahasiswaan -->
+          <div class="timeline__item reveal-on-scroll" data-experience-category="organization">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__card">
+              <div class="timeline__header">
+                <!-- GANTI: Periode organisasi -->
+                <span class="timeline__period">2022 &ndash; 2023</span>
+                <span class="timeline__badge">Organisasi</span>
+              </div>
+              <!-- GANTI: Jabatan organisasi -->
+              <h3 class="timeline__title">Ketua Divisi Media, Publikasi &amp; Dokumentasi</h3>
+              <h4 class="timeline__company">Himpunan Mahasiswa Manajemen Informatika (HIMAMI)</h4>
+              <p class="timeline__desc">Bertanggung jawab atas identitas visual organisasi, publikasi konten edukasi teknologi, dan dokumentasi kegiatan besar.</p>
+              <ul class="timeline__points">
+                <li>Memproduksi lebih dari 40 konten grafis dan reels edukasi seputar tips koding dan teknologi yang meningkatkan reach akun himpunan hingga 80%.</li>
+                <li>Memimpin tim yang terdiri dari 6 anggota untuk mengelola liputan dokumentasi seminar nasional tahunan.</li>
+              </ul>
+              <button type="button" class="timeline__docs-btn" data-docs-trigger data-docs-title="Dokumentasi Organisasi Kemahasiswaan" aria-controls="experience-docs-modal">
+                <span>Lihat Dokumentasi</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/>
+                </svg>
+              </button>
+              <details class="timeline__evidence timeline__evidence-source">
+                <summary>
+                  <span>Lihat dokumentasi &amp; bukti</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6"/>
+                  </svg>
+                </summary>
+                <div class="timeline__evidence-list">
+                  <div class="timeline__evidence-gallery">
+                    <a class="timeline__evidence-preview" href="assets/img/project-1.svg" target="_blank" rel="noopener noreferrer">
+                      <img src="assets/img/project-1.svg" alt="Contoh dokumentasi publikasi organisasi" loading="lazy" width="600" height="380">
+                      <span>Contoh publikasi visual</span>
+                    </a>
+                    <a class="timeline__evidence-preview" href="assets/img/cert-placeholder.svg" target="_blank" rel="noopener noreferrer">
+                      <img src="assets/img/cert-placeholder.svg" alt="Contoh sertifikat dokumentasi" loading="lazy" width="600" height="420">
+                      <span>Contoh sertifikat</span>
+                    </a>
+                  </div>
+                  <div class="timeline__evidence-placeholder">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/>
+                    </svg>
+                    <span>Tambahkan foto dokumentasi organisasi</span>
+                    <small>Poster, sertifikat, atau dokumentasi kegiatan</small>
+                  </div>
+                  <span class="timeline__evidence-item"><strong>Portofolio publikasi</strong><small>Konten grafis dan reels edukasi teknologi</small></span>
+                  <span class="timeline__evidence-item"><strong>Dokumentasi organisasi</strong><small>Liputan seminar nasional dan koordinasi tim</small></span>
+                  <span class="timeline__evidence-status">Dokumen pendukung dapat ditambahkan</span>
+                </div>
+              </details>
+            </div>
+          </div>
+
+        </div>
+
+        <dialog class="experience-modal" id="experience-docs-modal" aria-labelledby="experience-modal-title">
+          <div class="experience-modal__panel">
+            <div class="experience-modal__header">
+              <div>
+                <span class="experience-modal__eyebrow">Dokumentasi pengalaman</span>
+                <h3 class="experience-modal__title" id="experience-modal-title">Dokumentasi</h3>
+              </div>
+              <button type="button" class="experience-modal__close" data-docs-close aria-label="Tutup dokumentasi" title="Tutup dokumentasi">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 6 6 18M6 6l12 12"/>
+                </svg>
+              </button>
+            </div>
+            <div class="experience-modal__viewer">
+              <button type="button" class="experience-modal__nav" data-docs-prev aria-label="Gambar sebelumnya" title="Gambar sebelumnya">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m15 18-6-6 6-6"/>
+                </svg>
+              </button>
+              <div class="experience-modal__content" id="experience-modal-content"></div>
+              <button type="button" class="experience-modal__nav" data-docs-next aria-label="Gambar berikutnya" title="Gambar berikutnya">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="m9 18 6-6-6-6"/>
+                </svg>
+              </button>
+            </div>
+            <span class="experience-modal__counter" id="experience-modal-counter" aria-live="polite"></span>
+          </div>
+        </dialog>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         7. KONTAK (Contact Section & Collaboration)
+         ========================================================= -->
+    <section class="contact section" id="kontak">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-header__tag">Hubungi Saya</span>
+          <h2 class="section-header__title">Mari Membangun Sesuatu yang Hebat Bersama</h2>
+          <div class="section-header__line" aria-hidden="true"></div>
+        </div>
+
+        <div class="contact__layout">
+          
+          <!-- Kolom Informasi Kontak & Media Sosial -->
+          <div class="contact__info reveal-on-scroll">
+            <h3 class="contact__heading">Punya Ide Proyek atau Peluang Karier?</h3>
+            <p class="contact__text">
+              Saya siap diajak berdiskusi mengenai posisi pekerjaan penuh waktu (full-time), proyek lepas (freelance), maupun kerja sama kreatif lainnya. Jangan ragu untuk menyapa lewat formulir atau saluran komunikasi langsung di bawah ini!
+            </p>
+
+            <!-- Kartu Kontak Langsung -->
+            <div class="contact__cards">
+              
+              <!-- Email -->
+              <!-- GANTI: Alamat email asli Anda -->
+              <a href="mailto:mhd.akbarmura@gmail.com" class="contact-card contact-card--email">
+                <div class="contact-card__icon-box" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                    <path d="m3 7 9 6 9-6"/>
+                  </svg>
+                </div>
+                <div class="contact-card__body">
+                  <span class="contact-card__label">Alamat Email</span>
+                  <span class="contact-card__val">mhd.akbarmura@gmail.com</span>
+                </div>
+              </a>
+
+              <!-- WhatsApp -->
+              <!-- GANTI: Nomor WhatsApp Anda (Format internasional 628xxx) -->
+              <a href="https://wa.me/6281278948316?text=Halo%20Akbar,%20saya%20melihat%20portofolio%20Anda" target="_blank" rel="noopener noreferrer" class="contact-card contact-card--whatsapp">
+                <div class="contact-card__icon-box" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path fill="currentColor" d="M12 2a9.9 9.9 0 0 0-8.52 14.95L2 22l5.2-1.37A10 10 0 1 0 12 2Z"/>
+                    <path fill="var(--color-surface)" d="M16.68 13.92c-.25-.13-1.49-.73-1.72-.81-.23-.08-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.06-.25-.13-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.36-1.7-.14-.25-.01-.39.11-.52.11-.11.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.37-.78-1.88-.21-.49-.42-.42-.57-.43h-.49c-.17 0-.44.06-.67.32-.23.25-.88.86-.88 2.1s.9 2.44 1.03 2.61c.13.17 1.76 2.69 4.27 3.77.6.26 1.07.41 1.44.53.61.19 1.17.16 1.61.1.49-.07 1.49-.61 1.7-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.16-.48-.29Z"/>
+                  </svg>
+                </div>
+                <div class="contact-card__body">
+                  <span class="contact-card__label">WhatsApp</span>
+                  <span class="contact-card__val">+62 812-7894-8316</span>
+                </div>
+              </a>
+
+              <!-- Lokasi -->
+              <div class="contact-card contact-card--location">
+                <div class="contact-card__icon-box" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path fill="#EA4335" d="M12 2.5a7.5 7.5 0 0 0-7.5 7.5c0 5.18 7.5 11.5 7.5 11.5S19.5 15.18 19.5 10A7.5 7.5 0 0 0 12 2.5Z"/>
+                    <circle cx="12" cy="10" r="3" fill="#fff"/>
+                  </svg>
+                </div>
+                <div class="contact-card__body">
+                  <span class="contact-card__label">Domisili</span>
+                  <!-- GANTI: Kota domisili Anda -->
+                  <span class="contact-card__val">Musi Rawas, Sumatera Selatan</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Tautan Jejaring Sosial -->
+            <div class="contact__socials">
+              <span class="contact__socials-label">Profil Profesional:</span>
+              <div class="social-links">
+                <!-- GANTI: Tautan LinkedIn Anda -->
+                <a href="https://linkedin.com/in/muhammad-akbar-tgm20" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Muhammad Akbar" title="Kunjungi LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect width="4" height="12" x="2" y="9"/>
+                    <circle cx="4" cy="4" r="2"/>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+
+                <!-- GANTI: Tautan GitHub Anda -->
+                <a href="https://github.com/mhdakbar20" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Muhammad Akbar" title="Kunjungi GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+
+                <!-- GANTI: Tautan Instagram Anda -->
+                <a href="https://instagram.com/m.hdakbar_" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram Muhammad Akbar" title="Kunjungi Instagram">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                  </svg>
+                  <span>Instagram</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Kolom Formulir Kontak (UI Bersih & Siap Diintegrasikan ke PHP) -->
+          <div class="contact__form-wrapper reveal-on-scroll">
+            <h3 class="contact__form-title">Kirim Pesan Langsung</h3>
+            <p class="contact__form-subtitle">Formulir ini dapat dihubungkan ke PHP atau Formspree dengan menambahkan atribut action.</p>
+
+            <!-- GANTI: Untuk menyambungkan ke PHP nanti, isi action="kirim_pesan.php" method="POST" -->
+            <form action="" method="POST" class="contact-form" id="contact-form">
+              
+              <div class="form-group">
+                <label for="nama" class="form-label">Nama Lengkap <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="nama" name="nama" class="form-input" placeholder="Misal: Budi Santoso" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Alamat Email <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="nama@perusahaan.com" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label for="subjek" class="form-label">Subjek / Topik Kebutuhan <span class="required" aria-hidden="true">*</span></label>
+                <select id="subjek" name="subjek" class="form-select" required>
+                  <option value="" disabled selected>Pilih salah satu keperluan...</option>
+                  <option value="rekrutmen">Peluang Kerja / Rekrutmen Karyawan</option>
+                  <option value="proyek">Penawaran Proyek Website Freelance</option>
+                  <option value="desain">Kebutuhan Desain Grafis / Multimedia</option>
+                  <option value="administrasi">Layanan Administrasi &amp; Entri Data</option>
+                  <option value="kolaborasi">Diskusi Kolaborasi / Pertanyaan Umum</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="pesan" class="form-label">Pesan Anda <span class="required" aria-hidden="true">*</span></label>
+                <textarea id="pesan" name="pesan" rows="5" class="form-textarea" placeholder="Tuliskan gambaran proyek, tawaran posisi, atau pertanyaan Anda di sini..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" id="form-submit-btn">
+                <span>Kirim Pesan Sekarang</span>
+                <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </button>
+
+              <!-- Notifikasi Feedback Form -->
+              <div class="form-feedback" id="form-feedback" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       8. FOOTER
+       ========================================================= -->
+  <footer class="footer">
+    <div class="container footer__container">
+      
+      <div class="footer__brand">
+        <a href="#hero" class="logo">
+          <span class="logo__badge">MA</span>
+          <!-- GANTI: Nama brand/inisial Anda -->
+          <span class="logo__text">Muhammad<span class="logo__dot">Akbar</span></span>
+        </a>
+        <p class="footer__tagline">Web Development &bull; Administrasi &bull; Multimedia</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#tentang" class="footer__link">Tentang</a>
+        <a href="#keahlian" class="footer__link">Keahlian</a>
+        <a href="#proyek" class="footer__link">Proyek</a>
+        <a href="#pengalaman" class="footer__link">Pengalaman</a>
+        <a href="#kontak" class="footer__link">Kontak</a>
+      </div>
+
+      <!-- Tombol Kembali ke Atas Halaman -->
+      <div class="footer__back-to-top">
+        <a href="#hero" class="btn-top" aria-label="Kembali ke atas halaman" title="Kembali ke atas">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <!-- GANTI: Tahun atau teks copyright -->
+        <p class="footer__copy">
+          &copy; <span id="current-year">2026</span> Muhammad Akbar. Hak cipta dilindungi.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript Utama -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

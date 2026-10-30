@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5ede4"/>
+      <stop offset="100%" stop-color="#e4d5c3"/>
+    </linearGradient>
+    <filter id="p2Shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#402d1d" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="380" rx="16" fill="url(#p2Bg)"/>
+
+  <!-- Application Window Mockup -->
+  <g transform="translate(40, 30)" filter="url(#p2Shadow)">
+    <rect width="520" height="320" rx="12" fill="#ffffff"/>
+    
+    <!-- App Top Bar -->
+    <path d="M0 12 C0 5.37 5.37 0 12 0 L508 0 C514.63 0 520 5.37 520 12 L520 40 L0 40 Z" fill="#2d221a"/>
+    <circle cx="20" cy="20" r="5" fill="#f87171"/>
+    <circle cx="36" cy="20" r="5" fill="#fbbf24"/>
+    <circle cx="52" cy="20" r="5" fill="#34d399"/>
+    <text x="75" y="24" font-family="system-ui, sans-serif" font-weight="600" font-size="11" fill="#f5ede4">SIM-Aset &bull; Sistem Inventaris Kantor</text>
+    
+    <!-- Sidebar -->
+    <rect x="0" y="40" width="110" height="280" fill="#f9f6f2"/>
+    <line x1="110" y1="40" x2="110" y2="320" stroke="#e8ded2" stroke-width="1"/>
+    
+    <!-- Sidebar Items -->
+    <rect x="10" y="55" width="90" height="24" rx="4" fill="#eedfcb"/>
+    <text x="20" y="71" font-family="system-ui, sans-serif" font-weight="600" font-size="9" fill="#845233">Dashboard</text>
+    
+    <text x="20" y="105" font-family="system-ui, sans-serif" font-size="9" fill="#786e64">Data Aset</text>
+    <text x="20" y="135" font-family="system-ui, sans-serif" font-size="9" fill="#786e64">Peminjaman</text>
+    <text x="20" y="165" font-family="system-ui, sans-serif" font-size="9" fill="#786e64">Maintenance</text>
+    <text x="20" y="195" font-family="system-ui, sans-serif" font-size="9" fill="#786e64">Laporan PDF</text>
+
+    <!-- Main Content Area -->
+    <!-- Metric Stat Cards -->
+    <g transform="translate(125, 55)">
+      <!-- Metric 1 -->
+      <rect width="115" height="55" rx="6" fill="#fdfbf9" stroke="#e8ded2" stroke-width="1"/>
+      <text x="12" y="22" font-family="system-ui, sans-serif" font-size="9" fill="#786e64">Total Aset Aktif</text>
+      <text x="12" y="44" font-family="system-ui, sans-serif" font-weight="700" font-size="16" fill="#25201c">1.248</text>
+      <circle cx="95" cy="27" r="12" fill="#845233" opacity="0.1"/>
+      
+      <!-- Metric 2 -->
+      <g transform="translate(130, 0)">
+        <rect width="115" height="55" rx="6" fill="#fdfbf9" stroke="#e8ded2" stroke-width="1"/>
+        <text x="12" y="22" font-family="system-ui, sans-serif" font-size="9" fill="#786e64">Dipinjam Hari Ini</text>
+        <text x="12" y="44" font-family="system-ui, sans-serif" font-weight="700" font-size="16" fill="#845233">42</text>
+      </g>
+      
+      <!-- Metric 3 -->
+      <g transform="translate(260, 0)">
+        <rect width="115" height="55" rx="6" fill="#fdfbf9" stroke="#e8ded2" stroke-width="1"/>
+        <text x="12" y="22" font-family="system-ui, sans-serif" font-size="9" fill="#786e64">Status Prima</text>
+        <text x="12" y="44" font-family="system-ui, sans-serif" font-weight="700" font-size="16" fill="#10b981">98.5%</text>
+      </g>
+    </g>
+
+    <!-- Data Table Mockup -->
+    <g transform="translate(125, 125)">
+      <rect width="375" height="175" rx="6" fill="#ffffff" stroke="#e8ded2" stroke-width="1"/>
+      <!-- Table Header -->
+      <rect width="375" height="28" rx="6" fill="#f5ede4"/>
+      <text x="15" y="18" font-family="system-ui, sans-serif" font-weight="600" font-size="9" fill="#5c534a">Kode Aset</text>
+      <text x="95" y="18" font-family="system-ui, sans-serif" font-weight="600" font-size="9" fill="#5c534a">Nama Perangkat</text>
+      <text x="210" y="18" font-family="system-ui, sans-serif" font-weight="600" font-size="9" fill="#5c534a">Unit Kerja</text>
+      <text x="310" y="18" font-family="system-ui, sans-serif" font-weight="600" font-size="9" fill="#5c534a">Status</text>
+
+      <!-- Row 1 -->
+      <line x1="0" y1="60" x2="375" y2="60" stroke="#f0ebe3" stroke-width="1"/>
+      <text x="15" y="48" font-family="system-ui, sans-serif" font-size="9" fill="#25201c">AST-2024-01</text>
+      <text x="95" y="48" font-family="system-ui, sans-serif" font-size="9" fill="#25201c">MacBook Air M2</text>
+      <text x="210" y="48" font-family="system-ui, sans-serif" font-size="9" fill="#5c534a">Divisi Media</text>
+      <rect x="305" y="38" width="55" height="16" rx="8" fill="#dcfce7"/>
+      <text x="317" y="50" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#15803d">Tersedia</text>
+
+      <!-- Row 2 -->
+      <line x1="0" y1="95" x2="375" y2="95" stroke="#f0ebe3" stroke-width="1"/>
+      <text x="15" y="82" font-family="system-ui, sans-serif" font-size="9" fill="#25201c">AST-2024-02</text>
+      <text x="95" y="82" font-family="system-ui, sans-serif" font-size="9" fill="#25201c">Projector Epson 4K</text>
+      <text x="210" y="82" font-family="system-ui, sans-serif" font-size="9" fill="#5c534a">R. Rapat Utama</text>
+      <rect x="305" y="72" width="55" height="16" rx="8" fill="#fef3c7"/>
+      <text x="314" y="84" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#b45309">Dipinjam</text>
+
+      <!-- Row 3 -->
+      <line x1="0" y1="130" x2="375" y2="130" stroke="#f0ebe3" stroke-width="1"/>
+      <text x="15" y="117" font-family="system-ui, sans-serif" font-size="9" fill="#25201c">AST-2024-03</text>
+      <text x="95" y="117" font-family="system-ui, sans-serif" font-size="9" fill="#25201c">Kamera Sony A7C</text>
+      <text x="210" y="117" font-family="system-ui, sans-serif" font-size="9" fill="#5c534a">Publikasi Humas</text>
+      <rect x="305" y="107" width="55" height="16" rx="8" fill="#dcfce7"/>
+      <text x="317" y="119" font-family="system-ui, sans-serif" font-size="8" font-weight="600" fill="#15803d">Tersedia</text>
+    </g>
+  </g>
+</svg>
