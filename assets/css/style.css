@@ -157,6 +157,7 @@ html {
   scroll-behavior: smooth;
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -799,6 +800,12 @@ button {
   overflow-y: auto;
   pointer-events: none;
   will-change: transform;
+}
+
+@media (max-width: 767px) {
+  .nav {
+    max-width: 100%;
+  }
 }
 
 .nav.is-open {
