@@ -1538,6 +1538,15 @@
           </div>
         </dialog>
 
+        <dialog class="contact-alert-modal" id="contact-alert-modal" aria-labelledby="contact-alert-modal-title">
+          <div class="contact-alert-modal__panel">
+            <div class="contact-alert-modal__icon" aria-hidden="true">!</div>
+            <h3 class="contact-alert-modal__title" id="contact-alert-modal-title">Fitur masih dalam pengembangan</h3>
+            <p class="contact-alert-modal__text">Form pesan langsung belum tersedia. Silakan hubungi saya melalui email atau WhatsApp untuk saat ini.</p>
+            <button type="button" class="btn btn--primary" data-contact-alert-close>Baik, saya mengerti</button>
+          </div>
+        </dialog>
+
       </div>
     </section>
 
@@ -1653,7 +1662,6 @@
           <!-- Kolom Formulir Kontak (UI Bersih & Siap Diintegrasikan ke PHP) -->
           <div class="contact__form-wrapper reveal-on-scroll">
             <h3 class="contact__form-title">Kirim Pesan Langsung</h3>
-            <p class="contact__form-subtitle">Formulir ini dapat dihubungkan ke PHP atau Formspree dengan menambahkan atribut action.</p>
 
             <!-- GANTI: Untuk menyambungkan ke PHP nanti, isi action="kirim_pesan.php" method="POST" -->
             <form action="" method="POST" class="contact-form" id="contact-form">

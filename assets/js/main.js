@@ -544,44 +544,27 @@ document.addEventListener('DOMContentLoaded', () => {
   // 11. FORMULIR KONTAK INTERAKTIF (FEEDBACK DEMO)
   // ------------------------------------------------------------------------
   const contactForm = document.getElementById('contact-form');
-  const formFeedback = document.getElementById('form-feedback');
-  const formSubmitBtn = document.getElementById('form-submit-btn');
+  const contactAlertModal = document.getElementById('contact-alert-modal');
+  const contactAlertClose = document.querySelector('[data-contact-alert-close]');
 
-  if (contactForm && formFeedback) {
+  if (contactForm && contactAlertModal && contactAlertClose) {
     contactForm.addEventListener('submit', (e) => {
-      // Jika action formulir masih kosong (tahap frontend/mockup)
       const actionAttr = contactForm.getAttribute('action');
       if (!actionAttr || actionAttr.trim() === '') {
         e.preventDefault();
-
-        // Ambil nama pengirim
-        const nameInput = document.getElementById('nama');
-        const senderName = nameInput ? nameInput.value.trim() : 'Pengunjung';
-
-        // Tampilkan loading singkat pada tombol
-        const originalBtnText = formSubmitBtn.innerHTML;
-        formSubmitBtn.disabled = true;
-        formSubmitBtn.innerHTML = '<span>Mengirim...</span>';
-
-        setTimeout(() => {
-          formSubmitBtn.disabled = false;
-          formSubmitBtn.innerHTML = originalBtnText;
-
-          // Tampilkan pesan sukses informatif
-          formFeedback.className = 'form-feedback is-visible form-feedback--success';
-          formFeedback.innerHTML = `
-            <strong>Terima kasih, ${senderName}!</strong><br>
-            Pesan demo Anda berhasil diterima. Untuk mengalirkan pesan ke email asli, cukup hubungkan atribut <code>action="kirim.php"</code> pada form.
-          `;
-
-          contactForm.reset();
-
-          // Sembunyikan pesan setelah 6 detik
-          setTimeout(() => {
-            formFeedback.classList.remove('is-visible');
-          }, 6000);
-        }, 600);
+        contactAlertModal.showModal();
+        contactAlertClose.focus();
       }
+    });
+
+    const closeContactAlert = () => {
+      contactAlertModal.close();
+      document.getElementById('form-submit-btn')?.focus();
+    };
+
+    contactAlertClose.addEventListener('click', closeContactAlert);
+    contactAlertModal.addEventListener('click', (event) => {
+      if (event.target === contactAlertModal) closeContactAlert();
     });
   }
 });
