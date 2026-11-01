@@ -187,6 +187,9 @@ body.intro-active {
   display: grid;
   place-items: center;
   overflow: hidden;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: max(1rem, env(safe-area-inset-top)) max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) max(1rem, env(safe-area-inset-left));
   background-color: #191411;
   color: #f6eee5;
   opacity: 1;
@@ -218,7 +221,7 @@ body.intro-active {
 .site-intro__content {
   position: relative;
   z-index: 1;
-  width: min(90%, 540px);
+  width: min(100%, 540px);
   text-align: center;
   animation: introContentIn 900ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
@@ -296,6 +299,55 @@ body.intro-active {
   visibility: hidden !important;
   pointer-events: none;
   animation: none !important;
+}
+
+@media (max-width: 480px) {
+  .site-intro {
+    padding-inline: max(1rem, env(safe-area-inset-left)) max(1rem, env(safe-area-inset-right));
+  }
+
+  .site-intro__content {
+    width: 100%;
+  }
+
+  .site-intro__monogram {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 1.1rem;
+    border-radius: 18px;
+    font-size: 1.3rem;
+  }
+
+  .site-intro__name {
+    font-size: clamp(1.75rem, 9vw, 2.5rem);
+  }
+
+  .site-intro__role {
+    max-width: 280px;
+    margin-inline: auto;
+    line-height: 1.45;
+  }
+
+  .site-intro__progress {
+    width: min(100%, 220px);
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) and (max-height: 500px) {
+  .site-intro__monogram {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 0.75rem;
+  }
+
+  .site-intro__role {
+    margin-top: 0.55rem;
+  }
+
+  .site-intro__progress {
+    margin-top: 1rem;
+  }
 }
 
 @keyframes introContentIn {
