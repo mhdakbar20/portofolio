@@ -157,7 +157,7 @@ html {
   scroll-behavior: smooth;
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
@@ -166,7 +166,7 @@ body {
   line-height: 1.65;
   color: var(--color-text-main);
   background-color: var(--color-bg);
-  overflow-x: hidden;
+  overflow-x: clip;
   transition: background-color var(--transition-normal), color var(--transition-normal);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1065,6 +1065,7 @@ button {
     overflow: visible;
     display: block;
     z-index: auto;
+    pointer-events: auto;
   }
 
   .nav__mobile-header,
@@ -2740,12 +2741,28 @@ button {
   border-radius: var(--radius-full);
 }
 
+.projects__carousel {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) 42px;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.projects__carousel-nav {
+  display: inline-flex;
+  align-items: center;
+}
+
+.projects__carousel-nav--next {
+  justify-content: flex-end;
+}
+
 .projects__carousel-controls {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 0.75rem;
-  margin-bottom: 0.25rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
 }
 
 .projects__filters {
@@ -2787,26 +2804,47 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border: 1px solid var(--color-border);
   border-radius: 50%;
-  background-color: var(--color-bg);
+  background-color: var(--color-surface);
   color: var(--color-text-main);
-  transition: color var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast), opacity var(--transition-fast);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  user-select: none;
+  box-shadow: var(--shadow-sm);
 }
 
 .projects__carousel-btn:hover:not(:disabled),
 .projects__carousel-btn:focus-visible:not(:disabled) {
   border-color: var(--color-primary);
-  background-color: var(--color-primary-light);
   color: var(--color-primary);
+  background-color: var(--color-surface-elevated);
   transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(var(--color-primary-rgb), 0.15);
+}
+
+.projects__carousel-btn:active {
+  transform: scale(0.95);
 }
 
 .projects__carousel-btn:disabled {
   cursor: not-allowed;
-  opacity: 0.35;
+  opacity: 0.38;
+  box-shadow: none;
+}
+
+@media (max-width: 600px) {
+  .projects__carousel {
+    grid-template-columns: 42px minmax(0, 1fr) 42px;
+    gap: 0.5rem;
+  }
+
+  .projects__carousel-btn {
+    width: 42px;
+    height: 42px;
+  }
 }
 
 .project-card {

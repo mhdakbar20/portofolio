@@ -387,12 +387,23 @@ document.addEventListener('DOMContentLoaded', () => {
       if (projectsStatus) projectsStatus.textContent = visibleProjectCards.length > 0 ? `Proyek ${activeIndex + 1} dari ${visibleProjectCards.length}` : 'Tidak ada proyek';
     };
 
+    const getProjectScrollDistance = () => {
+      const firstCard = getVisibleProjectCards()[0];
+      if (!firstCard) return projectsTrack.clientWidth;
+
+      const cardStyle = window.getComputedStyle(firstCard);
+      const trackStyle = window.getComputedStyle(projectsTrack);
+      const cardWidth = firstCard.getBoundingClientRect().width;
+      const gap = parseFloat(trackStyle.columnGap || cardStyle.marginRight) || 0;
+
+      return cardWidth + gap;
+    };
+
     const scrollProjects = (direction) => {
-      const { step, maxStart } = getProjectMetrics();
-      const currentStart = Math.min(maxStart, Math.max(0, Math.round(projectsTrack.scrollLeft / step)));
-      const targetStart = Math.min(maxStart, Math.max(0, currentStart + direction));
-      projectsTrack.scrollTo({ left: targetStart * step, behavior: 'instant' });
-      updateProjectFocus();
+      projectsTrack.scrollBy({
+        left: direction * getProjectScrollDistance(),
+        behavior: 'smooth',
+      });
     };
 
     projectFilters.forEach((filterButton) => {
@@ -412,7 +423,7 @@ document.addEventListener('DOMContentLoaded', () => {
           card.classList.remove('is-featured');
         });
 
-        projectsTrack.scrollTo({ left: 0, behavior: 'instant' });
+        projectsTrack.scrollTo({ left: 0, behavior: 'smooth' });
         updateProjectFocus();
       });
     });
