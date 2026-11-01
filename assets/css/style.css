@@ -781,6 +781,49 @@ button {
   background-color: var(--color-primary);
 }
 
+@media (max-width: 480px) {
+  .header__container {
+    padding-inline: 0.9rem;
+  }
+
+  .logo {
+    flex-shrink: 0;
+  }
+
+  .logo__text {
+    display: none;
+  }
+
+  .header__actions {
+    gap: 0.35rem;
+  }
+
+  .header__shortcuts {
+    gap: 0.2rem;
+  }
+
+  .header__shortcut,
+  .theme-toggle,
+  .hamburger {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header__shortcut svg,
+  .theme-toggle__icon {
+    width: 17px;
+    height: 17px;
+  }
+
+  .hamburger {
+    gap: 4px;
+  }
+
+  .hamburger__line {
+    width: 18px;
+  }
+}
+
 /* Navigation Drawer Mobile */
 .nav {
   position: fixed;
