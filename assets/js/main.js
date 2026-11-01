@@ -341,6 +341,69 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ------------------------------------------------------------------------
+  // 8B. MODAL PREVIEW SERTIFIKAT PELATIHAN
+  // ------------------------------------------------------------------------
+  const certificateModal = document.getElementById('certificate-modal');
+  const certificateModalTitle = document.getElementById('certificate-modal-title');
+  const certificateModalEyebrow = certificateModal?.querySelector('.certificate-modal__eyebrow');
+  const certificateModalImage = document.getElementById('certificate-modal-image');
+  const certificateModalFrame = document.getElementById('certificate-modal-frame');
+  const certificateModalClose = document.querySelector('[data-certificate-close]');
+  const certificateTriggers = document.querySelectorAll('.cert-card__btn, .achievement-card--cumlaude .achievement-card__link');
+  let lastCertificateTrigger = null;
+
+  if (certificateModal && certificateModalTitle && certificateModalImage && certificateModalFrame && certificateModalClose) {
+    certificateTriggers.forEach((trigger) => {
+      trigger.addEventListener('click', (event) => {
+        event.preventDefault();
+
+        const certificateCard = trigger.closest('.cert-card');
+        const achievementCard = trigger.closest('.achievement-card');
+        const previewImage = certificateCard?.querySelector('.cert-card__img');
+        const href = trigger.getAttribute('href');
+        if (!href || (!previewImage && !achievementCard)) return;
+
+        lastCertificateTrigger = trigger;
+        certificateModalTitle.textContent = certificateCard?.querySelector('.cert-card__title')?.textContent.trim()
+          || achievementCard?.querySelector('.achievement-card__heading')?.textContent.trim()
+          || 'Pratinjau Sertifikat';
+        if (certificateModalEyebrow) {
+          certificateModalEyebrow.hidden = Boolean(achievementCard);
+        }
+
+        const isEmbeddedDocument = achievementCard && href.includes('drive.google.com');
+
+        if (isEmbeddedDocument) {
+          certificateModalImage.hidden = true;
+          certificateModalFrame.hidden = false;
+          certificateModalFrame.src = href.replace('/view?', '/preview?');
+        } else {
+          certificateModalFrame.hidden = true;
+          certificateModalFrame.removeAttribute('src');
+          certificateModalImage.hidden = false;
+          certificateModalImage.src = href || previewImage.currentSrc || previewImage.src;
+          certificateModalImage.alt = previewImage?.alt || 'Pratinjau piagam penghargaan';
+        }
+
+        certificateModal.showModal();
+        certificateModalClose.focus();
+      });
+    });
+
+    const closeCertificateModal = () => {
+      certificateModal.close();
+      certificateModalImage.removeAttribute('src');
+      certificateModalFrame.removeAttribute('src');
+      lastCertificateTrigger?.focus();
+    };
+
+    certificateModalClose.addEventListener('click', closeCertificateModal);
+    certificateModal.addEventListener('click', (event) => {
+      if (event.target === certificateModal) closeCertificateModal();
+    });
+  }
+
+  // ------------------------------------------------------------------------
   // 9. CAROUSEL PROYEK DENGAN FOKUS KARTU TENGAH
   // ------------------------------------------------------------------------
   const projectsTrack = document.getElementById('projects-track');
