@@ -846,7 +846,17 @@ button {
 }
 
 @media (max-width: 767px) {
+  .header {
+    position: fixed;
+  }
+
+  main {
+    padding-top: var(--header-height);
+  }
+
   .nav {
+    position: absolute;
+    top: 0;
     max-width: 100%;
   }
 }
